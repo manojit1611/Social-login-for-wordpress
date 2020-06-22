@@ -6,8 +6,8 @@ Note: This will auto manage the scrips for login based in user login or not and 
 you have to just add html code given below.
    
 Steps:
-1. Go to in wp-admin -> Social Login Settings and add your facebook app id and google id 
-2. Below is html code sample synced with events and function
+1. Go to in wp-admin -> Social Login Settings and add your facebook app id and google client id 
+2. Below is html code sample synced with events and function just copy and paste in front end code
 ```html
 <div class="row">
     <div class="col-md-12">
