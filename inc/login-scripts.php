@@ -14,7 +14,6 @@
         background-color: #ffffff;
     }
 </style>
-<script src="https://apis.google.com/js/platform.js?onload=startApp" async defer></script>
 <script>
     /*
     * jquery conflict

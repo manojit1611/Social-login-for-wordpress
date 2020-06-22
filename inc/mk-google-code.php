@@ -1,9 +1,9 @@
+<script src="https://apis.google.com/js/platform.js?onload=startApp" async defer></script>
 <script>
-
     function googlesignOut() {
         var auth2 = gapi.auth2.getAuthInstance();
         auth2.signOut().then(function () {
-            //console.log('User signed out.');
+            console.log('User signed out.');
         });
     }
 
@@ -30,7 +30,10 @@
     };
 
     function attachSignin(element) {
-        // //console.log(element.id);
+        if (typeof element == 'undefined') {
+            return;
+        }
+        console.log('google element attached ', element);
         auth2.attachClickHandler(element, {},
             function (googleUser) {
 
