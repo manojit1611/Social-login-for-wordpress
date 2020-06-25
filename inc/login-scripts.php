@@ -21,6 +21,7 @@
     $ = jQuery.noConflict();
 
     function mk_preload_on(msg, msg_type_cls) {
+        mk_preload_off();
         // mk_preload_off();
         msg = typeof msg != "undefined" ? msg : "Processing ...";
         msg_type_cls = typeof msg_type_cls != "undefined" ? msg_type_cls : "p_info";
@@ -46,6 +47,9 @@
         $("body").append($div);
         $div.css({bottom: gap + "px"});
         $div.addClass("animate__animated animate__backInUp");
+        setTimeout(function () {
+            $(".mk_preloader").remove();
+        }, 3000);
     }
 
     function mk_preload_off() {
